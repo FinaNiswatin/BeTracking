@@ -1,0 +1,1 @@
+@extends('base-not-auth')
