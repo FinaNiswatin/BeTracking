@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f5f7;
+    color: #333;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.main-reports {
+    /* max-width: 1000px;
+    Adjust as needed */
+    margin: 0 auto;
+    /* Center the container */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+header .user-info {
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+main {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1D4E89;
+}
+
+.report-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.report-controls .add-report {
+    font-size: 1.5rem;
+    background-color: #1D4E89;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+.report-day {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.report-date {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1D4E89;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.report-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.report-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.report-item .icon {
+    font-size: 1.5rem;
+}
+
+.report-item .details {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.report-item .details span:first-child {
+    font-weight: bold;
+}
+
+.amount {
+    font-weight: bold;
+}
+
+.amount.expense {
+    color: #ff6347;
+}
+
+.amount.income {
+    color: #32cd32;
+}
+
+.title {
+    color: #004442;
+}
+
+.report-date {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    color: black;
+}
+
+.date-day {
+    font-size: 2rem;
+    /* Ukuran besar untuk tanggal */
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.date-info {
+    display: flex;
+    flex-direction: column;
+    /* Atur posisi 09.2024 dan Monday ke atas-bawah */
+    align-items: flex-start;
+    /* Mengatur teks di sebelah kiri */
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+.date-month-year {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.date-weekday {
+    background-color: #00c2c7;
+    /* Sesuaikan warna untuk kontras */
+    color: white;
+    border-radius: 0.25rem;
+    padding: 0.2rem 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    /* Beri sedikit jarak dari month-year */
+}
+
+.modal-content {
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+/* Gaya dasar untuk tab */
+.nav-tabs .nav-link {
+    color: #333;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Gaya tab saat aktif */
+.nav-tabs .nav-link.active {
+    background-color: #00c2c7;
+    color: white !important;
+    border-radius: 5px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.btn-outline-secondary {
+    color: #333;
+    border-color: #333;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #f5f5f5;
+}

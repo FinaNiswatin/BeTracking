@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/report.css') }}">
+    
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>BeTracking</title>
 </head>
