@@ -21,3 +21,98 @@
 .custom-shadow-search{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
 }
+
+
+
+/* WALLET */
+/* Wallet Container to add the layered shadow */
+.wallet-container {
+    position: relative;
+    width: 90%;
+    margin: 20px;
+}
+
+/* Layered shadow effect */
+.wallet-container::before,
+.wallet-container::after {
+    content: "";
+    position: absolute;
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+}
+
+.wallet-container::before {
+    background-color: #D3E6E4;
+    transform: translate(10px, 10px);
+}
+
+.wallet-container::after {
+    background-color: #ECEFF1;
+    transform: translate(20px, 20px);
+}
+
+/* Wallet Card Styling */
+.wallet-card {
+    background: linear-gradient(135deg, #2EA8A2, #124240);
+    border-radius: 16px;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Wallet Title */
+.wallet-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #004442;
+}
+
+/* Wallet Bank Name and Balance */
+.wallet-bank {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+.wallet-balance {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.wallet-eye-icon,
+.wallet-copy-icon {
+    margin-left: 5px;
+    font-size: 1rem;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+/* Account Number */
+.wallet-account {
+    display: block;
+    font-size: 0.9rem;
+    color: #c1c7cd;
+}
+
+/* Date at the bottom left */
+.wallet-date {
+    font-size: 0.8rem;
+    color: #ECEFF1;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Icon Styling */
+.wallet-icon {
+    font-size: 1.2rem;
+}

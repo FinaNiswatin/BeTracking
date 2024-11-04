@@ -44,25 +44,42 @@
             <div class="col-md-4">
                 <div class="custom-shadow goal-card p-4 mb-4">
                     <h5>My Goals</h5>
-                    <div class="my-3">
-                        <h6>Laptop - 20%</h6>
-                        <p>Rp4,045,300</p>
-                    </div>
-                    <div class="my-3">
-                        <h6>PS 5 - 30%</h6>
-                        <p>Rp2,128,900</p>
+                    <div class="row">
+                        <!-- Laptop Goal -->
+                        <div class="col-md-6 my-3">
+                            <div class="border p-3 text-center rounded-4" style="background: linear-gradient(135deg, #8F96AE, #3B3E48); color: white;">
+                                <h6 class="fs-5 fw-normal">Laptop</h6>
+                                <h2>20%</h2>
+                                <p class="fw-normal">Rp4,045,300</p>
+                            </div>
+                        </div>
+                        
+                        <!-- PS 5 Goal -->
+                        <div class="col-md-6 my-3">
+                            <div class="border p-3 text-center rounded-4" style="background: linear-gradient(135deg, #2EA8A2, #124240); color: white;">
+                                <h6 class="fs-5 fw-normal">PS 5</h6>
+                                <h2>30%</h2>
+                                <p class="fw-normal">Rp2,128,900</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
+                
 
                 <!-- Wallet -->
-                <div class="custom-shadow wallet-card p-4">
-                    <h5>Wallet</h5>
-                    <div>
-                        <h6>BNI</h6>
-                        <p>Rp5,321,100</p>
-                        <small>1234567890</small>
+                <div class="wallet-container">
+                    <h5 class="wallet-title">Wallet <span class="wallet-icon">➜</span></h5>
+                    <div class="wallet-card custom-shadow p-4">
+                        <div class="wallet-content">
+                            <h6 class="wallet-bank">BNI</h6>
+                            <p class="wallet-balance">Rp5,321,100 <span class="wallet-eye-icon">👁️</span></p>
+                            <small class="wallet-account">1234567890 <span class="wallet-copy-icon">📋</span></small>
+                        </div>
+                        <div class="wallet-date">09/27</div>
                     </div>
                 </div>
+                
             </div>
         </div>
 
@@ -98,7 +115,7 @@
                         <td>1 Sept</td>
                         <td class="text-danger">- Rp20,000</td>
                     </tr>
-                    <!-- Add more rows as needed -->
+                
                 </tbody>
             </table>
         </div>
