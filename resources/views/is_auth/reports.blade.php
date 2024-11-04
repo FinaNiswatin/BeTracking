@@ -1,15 +1,15 @@
 @extends('base')
 
 @section('content')
-<div class="container-fluid mt-5 py-5"> <!-- Use container-fluid for full width -->
+<div class="container-report-fluid py-5"> <!-- Use container-fluid for full width -->
 
-    <main class="main-reports mt-5 py-5">
-        <div class="row">
-            <div class="col-12"> <!-- This will now take the full width -->
-                <h2 class="d-flex justify-content-between align-items-center">
+    <main class="main-reports py-5 align-items-center">
+        <div class="row justify-content-center"> <!-- Center row -->
+            <div class="col-lg-8 col-md-10"> <!-- Center column and adjust width -->
+                <h2 class="h2 d-flex justify-content-between align-items-center">
                     <!-- Trigger Modal -->
                     <div class="d-flex align-items-center">
-                        <span class="title me-2">My Reports</span>
+                        <span class="title-report me-2">My Reports</span>
                         <img src="{{ asset('images/add.svg') }}" alt="Add Report Icon" data-bs-toggle="modal" data-bs-target="#reportModal" style="cursor: pointer;" />
                     </div>
 
@@ -18,18 +18,17 @@
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content" style="border-radius: 12px; padding: 20px;">
                                 <div class="modal-header border-0">
-                                    <h5 class="modal-title text-center w-100" id="reportModalLabel" style="color: #333;">Make a Report</h5>
+                                    <h5 class="modal-title text-start w-100" id="reportModalLabel" style="color: #333;">Make a Report</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <!-- Tabs for Incomes and Expenses -->
-                                    <!-- Tabs for Incomes and Expenses -->
                                     <ul class="nav nav-tabs justify-content-center mb-3" id="reportTab" role="tablist">
                                         <li class="nav-item">
-                                            <button class="nav-link active" id="incomes-tab" data-bs-toggle="tab" data-bs-target="#incomes" type="button" role="tab" aria-controls="incomes" aria-selected="true">Incomes</button>
+                                            <button class="nav-link-report active" id="incomes-tab" data-bs-toggle="tab" data-bs-target="#incomes" type="button" role="tab" aria-controls="incomes" aria-selected="true">Incomes</button>
                                         </li>
                                         <li class="nav-item">
-                                            <button class="nav-link" id="expenses-tab" data-bs-toggle="tab" data-bs-target="#expenses" type="button" role="tab" aria-controls="expenses" aria-selected="false">Expenses</button>
+                                            <button class="nav-link-report" id="expenses-tab" data-bs-toggle="tab" data-bs-target="#expenses" type="button" role="tab" aria-controls="expenses" aria-selected="false">Expenses</button>
                                         </li>
                                     </ul>
                                     <!-- Form Content -->
@@ -59,7 +58,7 @@
                                                     <textarea class="form-control" id="details" rows="2" style="border-radius: 8px;"></textarea>
                                                 </div>
                                                 <div class="d-flex justify-content-between">
-                                                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal" style="border-radius: 8px;">Cancel</button>
+                                                    <button type="button" class="btn btn-outline-secondary-report" data-bs-dismiss="modal" style="border-radius: 8px;">Cancel</button>
                                                     <button type="submit" class="btn btn-primary" style="background-color: #00c2c7; border: none; border-radius: 8px;">SAVE</button>
                                                 </div>
                                             </form>
@@ -89,7 +88,7 @@
                                                     <textarea class="form-control" id="details" rows="2" style="border-radius: 8px;"></textarea>
                                                 </div>
                                                 <div class="d-flex justify-content-between">
-                                                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal" style="border-radius: 8px;">Cancel</button>
+                                                    <button type="button" class="btn btn-outline-secondary-report" data-bs-dismiss="modal" style="border-radius: 8px;">Cancel</button>
                                                     <button type="submit" class="btn btn-primary" style="background-color: #00c2c7; border: none; border-radius: 8px;">SAVE</button>
                                                 </div>
                                             </form>
@@ -123,47 +122,47 @@
                         <span class="date-month-year">09-2024</span>
                         <span class="date-weekday">Monday</span>
                     </div>
-                </div>
-                    <div class="report-items">
+                    </div>
+                    <div class="report-items px-3">
                         <div class="row report-item align-items-center"> <!-- Flexbox for alignment -->
-                            <div class="col-4 d-flex align-items-center"> <!-- Left section for icon and description -->
+                            <div class="col-5 d-flex align-items-center"> <!-- Left section for icon and description -->
                                 <img src="{{ asset('images/Icon Lunch1.svg') }}" alt="Lunch Icon" class="me-2" />
                                 <div class="details">
                                     <span>Lunch</span>
                                 </div>
                             </div>
-                            <div class="col-4 text-center"> <!-- Center section for category -->
-                                <span class="category">Category: Food and Beverages</span>
+                            <div class="col-5 text-start"> <!-- Center section for category -->
+                                <span class="category">Food and Beverages</span>
                             </div>
-                            <div class="col-4 text-end"> <!-- Right section for amount -->
+                            <div class="col-2 text-start"> <!-- Right section for amount -->
                                 <span class="amount expense">Rp12,000</span>
                             </div>
                         </div>
                         <div class="row report-item align-items-center"> <!-- Flexbox for alignment -->
-                            <div class="col-4 d-flex align-items-center"> <!-- Left section for icon and description -->
+                            <div class="col-5 d-flex align-items-center"> <!-- Left section for icon and description -->
                                 <img src="{{ asset('images/Icon grocery.svg') }}" alt="Grocery Icon" class="me-2" />
                                 <div class="details">
                                     <span>Grocery at shop</span>
                                 </div>
                             </div>
-                            <div class="col-4 text-center"> <!-- Center section for category -->
-                                <span class="category">Category: Grocery</span>
+                            <div class="col-5 text-start"> <!-- Center section for category -->
+                                <span class="category">Grocery</span>
                             </div>
-                            <div class="col-4 text-end"> <!-- Right section for amount -->
+                            <div class="col-2 text-start"> <!-- Right section for amount -->
                                 <span class="amount expense">Rp17,000</span>
                             </div>
                         </div>
                         <div class="row report-item align-items-center"> <!-- Flexbox for alignment -->
-                            <div class="col-4 d-flex align-items-center"> <!-- Left section for icon and description -->
+                            <div class="col-5 d-flex align-items-center"> <!-- Left section for icon and description -->
                                 <img src="{{ asset('images/Icon coffe1.svg') }}" alt="Coffee Icon" class="me-2" />
                                 <div class="details">
                                     <span>Coffee</span>
                                 </div>
                             </div>
-                            <div class="col-4 text-center"> <!-- Center section for category -->
-                                <span class="category">Category: Hanging Out</span>
+                            <div class="col-5 text-start"> <!-- Center section for category -->
+                                <span class="category">Hanging Out</span>
                             </div>
-                            <div class="col-4 text-end"> <!-- Right section for amount -->
+                            <div class="col-2 text-start"> <!-- Right section for amount -->
                                 <span class="amount expense">Rp15,000</span>
                             </div>
                         </div>
@@ -178,60 +177,60 @@
                         <span class="date-weekday">Tuesday</span>
                     </div>
                 </div>
-                    <div class="report-items">
+                    <div class="report-items px-3">
                         <div class="row report-item align-items-center"> <!-- Flexbox for alignment -->
-                            <div class="col-4 d-flex align-items-center"> <!-- Left section for icon and description -->
+                            <div class="col-5 d-flex align-items-center"> <!-- Left section for icon and description -->
                                 <img src="{{ asset('images/Icon grocery.svg') }}" alt="Grocery Icon" class="me-2" />
                                 <div class="details">
                                     <span>Grocery at shop</span>
                                 </div>
                             </div>
-                            <div class="col-4 text-center"> <!-- Center section for category -->
-                                <span class="category">Category: Grocery</span>
+                            <div class="col-5 text-start"> <!-- Center section for category -->
+                                <span class="category">Grocery</span>
                             </div>
-                            <div class="col-4 text-end"> <!-- Right section for amount -->
+                            <div class="col-2 text-start"> <!-- Right section for amount -->
                                 <span class="amount expense">Rp50,000</span>
                             </div>
                         </div>
                         <div class="row report-item align-items-center"> <!-- Flexbox for alignment -->
-                            <div class="col-4 d-flex align-items-center"> <!-- Left section for icon and description -->
+                            <div class="col-5 d-flex align-items-center"> <!-- Left section for icon and description -->
                                 <img src="{{ asset('images/Icon grocery.svg') }}" alt="Grocery Icon" class="me-2" />
                                 <div class="details">
                                     <span>Pemutih</span>
                                 </div>
                             </div>
-                            <div class="col-4 text-center"> <!-- Center section for category -->
-                                <span class="category">Category: Grocery</span>
+                            <div class="col-5 text-start"> <!-- Center section for category -->
+                                <span class="category">Grocery</span>
                             </div>
-                            <div class="col-4 text-end"> <!-- Right section for amount -->
+                            <div class="col-2 text-start"> <!-- Right section for amount -->
                                 <span class="amount expense">Rp15,000</span>
                             </div>
                         </div>
                         <div class="row report-item align-items-center"> <!-- Flexbox for alignment -->
-                            <div class="col-4 d-flex align-items-center"> <!-- Left section for icon and description -->
+                            <div class="col-5 d-flex align-items-center"> <!-- Left section for icon and description -->
                                 <img src="{{ asset('images/Icon Lunch1.svg') }}" alt="Lunch Icon" class="me-2" />
                                 <div class="details">
                                     <span>Lunch</span>
                                 </div>
                             </div>
-                            <div class="col-4 text-center"> <!-- Center section for category -->
-                                <span class="category">Category: Grocery</span>
+                            <div class="col-5 text-start"> <!-- Center section for category -->
+                                <span class="category">Grocery</span>
                             </div>
-                            <div class="col-4 text-end"> <!-- Right section for amount -->
+                            <div class="col-2 text-start"> <!-- Right section for amount -->
                                 <span class="amount expense">Rp16,000</span>
                             </div>
                         </div>
                         <div class="row report-item align-items-center"> <!-- Flexbox for alignment -->
-                            <div class="col-4 d-flex align-items-center"> <!-- Left section for icon and description -->
+                            <div class="col-5 d-flex align-items-center"> <!-- Left section for icon and description -->
                                 <img src="{{ asset('images/Icon Lunch1.svg') }}" alt="Lunch Icon" class="me-2" />
                                 <div class="details">
                                     <span>Hutang Najem</span>
                                 </div>
                             </div>
-                            <div class="col-4 text-center"> <!-- Center section for category -->
-                                <span class="category">Category: Food and Beverages</span>
+                            <div class="col-5 text-start"> <!-- Center section for category -->
+                                <span class="category">Food and Beverages</span>
                             </div>
-                            <div class="col-4 text-end"> <!-- Right section for amount -->
+                            <div class="col-2 text-start"> <!-- Right section for amount -->
                                 <span class="amount income">Rp9,000</span>
                             </div>
                         </div>
