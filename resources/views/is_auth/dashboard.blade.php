@@ -1,12 +1,12 @@
 @extends('base')
 
 @section('content')
-    <div class="container mt-5 py-5" style="margin-top: 6rem">
+    <div class="container mt-5 py-5">
         
 
         <!-- Balance and Category Breakdown -->
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 mt-4">
 
                 <!-- Welcome Message -->
                 <h3 class="text-start text-primary">Dashboard</h3>
@@ -76,9 +76,9 @@
                         <h5 class="wallet-title">Wallet <span class="wallet-icon">➜</span></h5>
                         <div class="wallet-card custom-shadow p-4">
                             <div class="wallet-content">
-                                <h6 class="wallet-bank fw-semibold">BNI</h6>
-                                <p class="wallet-balance fw-semibold">Rp5,321,100 <span class="wallet-eye-icon">👁️</span></p>
-                                <small class="wallet-account fw-semibold">1234567890 <span class="wallet-copy-icon">📋</span></small>
+                                <img src="{{ asset("images/bni.png") }}" alt="">
+                                <p class="wallet-balance fw-semibold mt-3">Rp5,321,100 <span class="wallet-eye-icon"><img src="{{ asset('images/eye.svg') }}" alt=""></span></p>
+                                <small class="wallet-account fw-semibold">1234567890 <span class="wallet-copy-icon"><img src="{{ asset('images/copy.svg') }}" alt=""></span></small>
                             </div>
                             <div class="wallet-date">09/27</div>
                         </div>
