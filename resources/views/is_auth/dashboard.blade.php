@@ -1,14 +1,16 @@
 @extends('base')
 
 @section('content')
-    <div class="container mt-5 py-5" style="margin-top: 6rem">
-        <!-- Welcome Message -->
-        <h3 class="text-start text-primary">Dashboard</h3>
-        <p class="text-start fs-5 fw-normal text-primary">Here are your finance stats, Najem Salamy!</p>
+    <div class="container mt-5 py-5">
+        
 
         <!-- Balance and Category Breakdown -->
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 mt-4">
+
+                <!-- Welcome Message -->
+                <h3 class="text-start text-primary">Dashboard</h3>
+                <p class="text-start fs-5 fw-normal text-primary">Here are your finance stats, Najem Salamy!</p>
 
                 <!-- Search Bar -->
                 <input type="text" class="form-control custom-shadow-search card mb-4" placeholder="Search everything">
@@ -68,15 +70,18 @@
                 
 
                 <!-- Wallet -->
-                <div class="wallet-container">
-                    <h5 class="wallet-title">Wallet <span class="wallet-icon">➜</span></h5>
-                    <div class="wallet-card custom-shadow p-4">
-                        <div class="wallet-content">
-                            <h6 class="wallet-bank">BNI</h6>
-                            <p class="wallet-balance">Rp5,321,100 <span class="wallet-eye-icon">👁️</span></p>
-                            <small class="wallet-account">1234567890 <span class="wallet-copy-icon">📋</span></small>
+                <div class="outer-card custom-shadow-wallet p-4">
+                    <!-- Wallet -->
+                    <div class="wallet-container">
+                        <h5 class="wallet-title">Wallet <span class="wallet-icon">➜</span></h5>
+                        <div class="wallet-card custom-shadow p-4">
+                            <div class="wallet-content">
+                                <img src="{{ asset("images/bni.png") }}" alt="">
+                                <p class="wallet-balance fw-semibold mt-3">Rp5,321,100 <span class="wallet-eye-icon"><img src="{{ asset('images/eye.svg') }}" alt=""></span></p>
+                                <small class="wallet-account fw-semibold">1234567890 <span class="wallet-copy-icon"><img src="{{ asset('images/copy.svg') }}" alt=""></span></small>
+                            </div>
+                            <div class="wallet-date">09/27</div>
                         </div>
-                        <div class="wallet-date">09/27</div>
                     </div>
                 </div>
                 
