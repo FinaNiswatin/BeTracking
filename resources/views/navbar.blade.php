@@ -36,7 +36,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="dropdown-item d-flex align-items-center" href="#">
+                        <a class="dropdown-item d-flex align-items-center" href="{{ route('landing') }}">
                             <img src="{{ asset('images/logout.svg') }}" alt="Logout" class="dropdown-icon me-2">
                             Logout
                         </a>
