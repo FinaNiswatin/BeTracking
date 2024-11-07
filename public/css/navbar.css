@@ -12,11 +12,12 @@
     font-size: 1.25rem;
     display: flex;
     align-items: center;
+    margin-left: -7px;
 }
 
 .brand-logo {
-    height: 24px;
-    margin-right: 8px;
+    height: 30px;
+    margin-right: 10px;
 }
 
 .navbar-nav .nav-link {
@@ -60,12 +61,12 @@
     height: 16px;
 }
 
-
-
 /* navbar not auth */
 .custom-btn {
-    background-color: #046c64; 
+    background-color: #2EA8A2; 
     color: white; 
+    width: 90px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
 }
 
 .custom-btn:hover {
