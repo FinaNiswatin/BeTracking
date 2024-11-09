@@ -169,9 +169,8 @@
 
 /* Gaya tab saat aktif */
 .nav-tabs .nav-link-report.active {
-    background-color: #00c2c7;
-    color: white !important;
-    border-radius: 5px;
+    border-bottom: 3px solid #00c2c7;
+    color: #00c2c7;
 }
 
 .form-label {
