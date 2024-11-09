@@ -25,9 +25,10 @@
                             <!-- Dropdown untuk filter kategori -->
                             <div class="dropdown d-inline-block me-2">
                                 <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Filter Kategori
+                                    All Categories
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                                    <li><a class="dropdown-item" href="#">All Categories</a></li>
                                     <li><a class="dropdown-item" href="#">Food and Beverages</a></li>
                                     <li><a class="dropdown-item" href="#">Groceries</a></li>
                                     <li><a class="dropdown-item" href="#">Subscription</a></li>
@@ -37,9 +38,10 @@
                             <!-- Dropdown untuk filter waktu -->
                             <div class="dropdown d-inline-block">
                                 <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="timeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Filter Waktu
+                                    All Time
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="timeDropdown">
+                                    <li><a class="dropdown-item" href="#">All Time</a></li>
                                     <li><a class="dropdown-item" href="#">Daily</a></li>
                                     <li><a class="dropdown-item" href="#">Monthly</a></li>
                                     <li><a class="dropdown-item" href="#">Yearly</a></li>

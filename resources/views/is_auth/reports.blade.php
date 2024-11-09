@@ -116,12 +116,12 @@
                 </div>
 
                 <div class="report-day mb-3">
-                    <div class="report-date">
-                    <span class="date-day">23</span>
-                    <div class="date-info">
-                        <span class="date-month-year">09-2024</span>
-                        <span class="date-weekday">Monday</span>
-                    </div>
+                    <div class="report-date ms-3">
+                        <span class="date-day">23</span>
+                        <div class="date-info"> 
+                            <span class="date-month-year">09-2024</span>
+                            <span class="date-weekday">Monday</span>
+                        </div>
                     </div>
                     <div class="report-items px-3">
                         <div class="row report-item align-items-center"> <!-- Flexbox for alignment -->
@@ -170,12 +170,12 @@
                 </div>
 
                 <div class="report-day mb-3">
-                    <div class="report-date">
-                    <span class="date-day">24</span>
-                    <div class="date-info">
-                        <span class="date-month-year">09-2024</span>
-                        <span class="date-weekday">Tuesday</span>
-                    </div>
+                    <div class="report-date ms-3">
+                        <span class="date-day">24</span>
+                        <div class="date-info">
+                            <span class="date-month-year">09-2024</span>
+                            <span class="date-weekday">Tuesday</span>
+                        </div>
                 </div>
                     <div class="report-items px-3">
                         <div class="row report-item align-items-center"> <!-- Flexbox for alignment -->
