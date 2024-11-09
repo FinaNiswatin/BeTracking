@@ -88,11 +88,11 @@
 }
 
 .report-item .details span:first-child {
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .amount {
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .amount.expense {

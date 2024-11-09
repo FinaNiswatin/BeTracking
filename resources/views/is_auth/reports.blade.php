@@ -9,7 +9,7 @@
                 <h2 class="h2 d-flex justify-content-between align-items-center">
                     <!-- Trigger Modal -->
                     <div class="d-flex align-items-center">
-                        <span class="title-report me-2">My Reports</span>
+                        <span class="title-report me-4">My Reports</span>
                         <img src="{{ asset('images/add.svg') }}" alt="Add Report Icon" data-bs-toggle="modal" data-bs-target="#reportModal" style="cursor: pointer;" />
                     </div>
 
@@ -100,7 +100,7 @@
                     </div>
 
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                             Daily
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
