@@ -25,9 +25,10 @@
                             <!-- Dropdown untuk filter kategori -->
                             <div class="dropdown d-inline-block me-2">
                                 <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Filter Kategori
+                                    All Categories
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                                    <li><a class="dropdown-item" href="#">All Categories</a></li>
                                     <li><a class="dropdown-item" href="#">Food and Beverages</a></li>
                                     <li><a class="dropdown-item" href="#">Groceries</a></li>
                                     <li><a class="dropdown-item" href="#">Subscription</a></li>
@@ -37,9 +38,10 @@
                             <!-- Dropdown untuk filter waktu -->
                             <div class="dropdown d-inline-block">
                                 <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="timeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Filter Waktu
+                                    All Time
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="timeDropdown">
+                                    <li><a class="dropdown-item" href="#">All Time</a></li>
                                     <li><a class="dropdown-item" href="#">Daily</a></li>
                                     <li><a class="dropdown-item" href="#">Monthly</a></li>
                                     <li><a class="dropdown-item" href="#">Yearly</a></li>
@@ -107,30 +109,30 @@
                 
                 
 
-                <!-- Wallet -->
-                <a href="{{ route('wallet') }}" class="text-decoration-none">
-                    <div class="outer-card custom-shadow-wallet px-4 pb-5 pt-4 rounded-4">
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5 class="wallet-title fw-semibold">Wallet <span class="wallet-icon"></span></h5>
-                            </div>
-                            <div class="col-md-2">
-                                <img src="{{ asset('images/arrow45degree.svg') }}" alt="">
-                            </div>
-                        </div>
-                        <div class="wallet-container mt-2">
-                            <div class="wallet-card custom-shadow p-4">
-                                <div class="wallet-content">
-                                    <img src="{{ asset("images/bni.png") }}" alt="">
-                                    <p class="wallet-balance fw-semibold mt-3">Rp5,321,100 <span class="wallet-eye-icon"><img src="{{ asset('images/eye.svg') }}" alt=""></span></p>
-                                    <small class="wallet-account fw-semibold">1234567890 <span class="wallet-copy-icon"><img src="{{ asset('images/copy.svg') }}" alt=""></span></small>
+                    <!-- Wallet -->
+                    <a href="{{ route('wallet') }}" class="text-decoration-none">
+                        <div class="outer-card custom-shadow-wallet px-4 pb-5 pt-4 rounded-4">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <h5 class="wallet-title fw-semibold">Wallet <span class="wallet-icon"></span></h5>
                                 </div>
-                                <div class="wallet-date">09/27</div>
+                                <div class="col-md-2">
+                                    <img src="{{ asset('images/arrow45degree.svg') }}" alt="">
+                                </div>
+                            </div>
+                            <div class="wallet-container mt-2">
+                                <div class="wallet-card custom-shadow p-4">
+                                    <div class="wallet-content">
+                                        <img src="{{ asset("images/bni.png") }}" alt="">
+                                        <p class="wallet-balance fw-semibold mt-3">Rp5,321,100 <span class="wallet-eye-icon"><img src="{{ asset('images/eye.svg') }}" alt=""></span></p>
+                                        <small class="wallet-account fw-semibold">1234567890 <span class="wallet-copy-icon"><img src="{{ asset('images/copy.svg') }}" alt=""></span></small>
+                                    </div>
+                                    <div class="wallet-date">09/27</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                </a>
+                    </a>
                 
             </div>
         </div>
@@ -139,17 +141,12 @@
         <!-- Detail Transactions -->
         <div class="custom-shadow transaction-card mt-4 p-4 rounded-4">
             <div class="row align-items-start">
-                <a href="{{ route('reports') }}"class="col-md-10 text-decoration-none">
+                <a href="{{ route('reports') }}"class="col-md-9 text-decoration-none">
                     <div class="row mx-2">
-                        <div class="col-md-3">
-                            <h5 class="text-primary">Detail Transactions</h5>
-                        </div>
-                        <div class="col-md-9">
-                            <img src="{{ asset('images/plus-icon-dashboard.svg') }}" alt=""class="custom-img-detail-transaction">
-                        </div>
+                        <h5 class="text-primary">Detail Transactions  <img src="{{ asset('images/plus-icon-dashboard.svg') }}" alt=""></h5>
                     </div>
-                </a>
-                <div class="dropdown d-inline-block float-end mt-2 col-md-2">
+                </a>    
+                <div class="dropdown d-inline-block float-end mt-2 col-md-2 ms-4 ps-5">
                     <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="timeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                         Last 2 Weeks
                     </button>
@@ -180,7 +177,7 @@
                         <td class="text-danger">- Rp600,000</td>
                     </tr>
                     <tr>
-                        <td><img src="{{ asset('images/Icon grocery.svg') }}" alt="Subscription Icon" class="me-2" />
+                        <td><img src="{{ asset('images/icon_subs.svg') }}" alt="Subscription Icon" class="me-2" />
                             Netflix Subscription</td>
                         <td>Netflix</td>
                         <td>5 Sept 2024</td>

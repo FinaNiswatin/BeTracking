@@ -9,7 +9,7 @@
                 <h2 class="h2 d-flex justify-content-between align-items-center">
                     <!-- Trigger Modal -->
                     <div class="d-flex align-items-center">
-                        <span class="title-report me-2">My Reports</span>
+                        <span class="title-report me-4">My Reports</span>
                         <img src="{{ asset('images/add.svg') }}" alt="Add Report Icon" data-bs-toggle="modal" data-bs-target="#reportModal" style="cursor: pointer;" />
                     </div>
 
@@ -36,60 +36,60 @@
                                         <div class="tab-pane fade show active" id="incomes" role="tabpanel" aria-labelledby="incomes-tab">
                                             <form>
                                                 <div class="mb-3">
-                                                    <label for="date" class="form-label" style="color: #333;">Date</label>
+                                                    <label for="date" class="form-label fs-5" style="color: #333;">Date</label>
                                                     <input type="date" class="form-control" id="date" style="border-radius: 8px;">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="category" class="form-label" style="color: #333;">Category</label>
+                                                    <label for="category" class="form-label fs-5" style="color: #333;">Category</label>
                                                     <select class="form-select" id="category" style="border-radius: 8px;">
                                                         <option selected>Choose...</option>
                                                         <!-- Tambahkan opsi kategori di sini -->
                                                     </select>
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="amount" class="form-label" style="color: #333;">Amount</label>
+                                                    <label for="amount" class="form-label fs-5" style="color: #333;">Amount</label>
                                                     <div class="input-group">
                                                         <span class="input-group-text" style="border-radius: 8px 0 0 8px;">Rp.</span>
                                                         <input type="number" class="form-control" id="amount" style="border-radius: 0 8px 8px 0;">
                                                     </div>
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="details" class="form-label" style="color: #333;">Details</label>
+                                                    <label for="details" class="form-label fs-5" style="color: #333;">Details</label>
                                                     <textarea class="form-control" id="details" rows="2" style="border-radius: 8px;"></textarea>
                                                 </div>
                                                 <div class="d-flex justify-content-between">
                                                     <button type="button" class="btn btn-outline-secondary-report" data-bs-dismiss="modal" style="border-radius: 8px;">Cancel</button>
-                                                    <button type="submit" class="btn btn-primary" style="background-color: #00c2c7; border: none; border-radius: 8px;">SAVE</button>
+                                                    <button type="submit" class="btn btn-primary" style="background-color: #00c2c7; border: none; border-radius: 8px;">save</button>
                                                 </div>
                                             </form>
                                         </div>
                                         <div class="tab-pane fade" id="expenses" role="tabpanel" aria-labelledby="expenses-tab">
                                             <form>
                                                 <div class="mb-3">
-                                                    <label for="date" class="form-label" style="color: #333;">Date</label>
+                                                    <label for="date" class="form-label fs-5" style="color: #333;">Date</label>
                                                     <input type="date" class="form-control" id="date" style="border-radius: 8px;">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="category" class="form-label" style="color: #333;">Category</label>
+                                                    <label for="category" class="form-label fs-5" style="color: #333;">Category</label>
                                                     <select class="form-select" id="category" style="border-radius: 8px;">
                                                         <option selected>Choose...</option>
                                                         <!-- Tambahkan opsi kategori di sini -->
                                                     </select>
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="amount" class="form-label" style="color: #333;">Amount</label>
+                                                    <label for="amount" class="form-label fs-5" style="color: #333;">Amount</label>
                                                     <div class="input-group">
                                                         <span class="input-group-text" style="border-radius: 8px 0 0 8px;">Rp.</span>
                                                         <input type="number" class="form-control" id="amount" style="border-radius: 0 8px 8px 0;">
                                                     </div>
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="details" class="form-label" style="color: #333;">Details</label>
+                                                    <label for="details" class="form-label fs-5" style="color: #333;">Details</label>
                                                     <textarea class="form-control" id="details" rows="2" style="border-radius: 8px;"></textarea>
                                                 </div>
                                                 <div class="d-flex justify-content-between">
                                                     <button type="button" class="btn btn-outline-secondary-report" data-bs-dismiss="modal" style="border-radius: 8px;">Cancel</button>
-                                                    <button type="submit" class="btn btn-primary" style="background-color: #00c2c7; border: none; border-radius: 8px;">SAVE</button>
+                                                    <button type="submit" class="btn btn-primary" style="background-color: #00c2c7; border: none; border-radius: 8px;">Save</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -100,7 +100,7 @@
                     </div>
 
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                             Daily
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -116,12 +116,12 @@
                 </div>
 
                 <div class="report-day mb-3">
-                    <div class="report-date">
-                    <span class="date-day">23</span>
-                    <div class="date-info">
-                        <span class="date-month-year">09-2024</span>
-                        <span class="date-weekday">Monday</span>
-                    </div>
+                    <div class="report-date ms-3">
+                        <span class="date-day">23</span>
+                        <div class="date-info"> 
+                            <span class="date-month-year">09-2024</span>
+                            <span class="date-weekday">Monday</span>
+                        </div>
                     </div>
                     <div class="report-items px-3">
                         <div class="row report-item align-items-center"> <!-- Flexbox for alignment -->
@@ -170,12 +170,12 @@
                 </div>
 
                 <div class="report-day mb-3">
-                    <div class="report-date">
-                    <span class="date-day">24</span>
-                    <div class="date-info">
-                        <span class="date-month-year">09-2024</span>
-                        <span class="date-weekday">Tuesday</span>
-                    </div>
+                    <div class="report-date ms-3">
+                        <span class="date-day">24</span>
+                        <div class="date-info">
+                            <span class="date-month-year">09-2024</span>
+                            <span class="date-weekday">Tuesday</span>
+                        </div>
                 </div>
                     <div class="report-items px-3">
                         <div class="row report-item align-items-center"> <!-- Flexbox for alignment -->
