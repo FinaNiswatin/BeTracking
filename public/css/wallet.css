@@ -1,0 +1,156 @@
+.wallets-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+.wallets {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+}
+.wallet {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 350px;
+    height: 200px;
+    text-align: left;
+    position: relative;
+    color: #ffffff;
+}
+.wallet .wallet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.wallet .wallet-header img {
+    height: 20px;
+}
+.wallet .wallet-header .wallet-name {
+    font-weight: 700;
+    font-size: 18px;
+}
+.wallet .wallet-balance {
+    font-size: 24px;
+    font-weight: 00;
+    margin-bottom: 10px;
+}
+.wallet .wallet-balance .fa-eye {
+    margin-left: 10px;
+}
+.wallet .wallet-number {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.wallet .wallet-footer {
+    font-size: 16px;
+    color: #ffffff;
+}
+.wallet .wallet-footer .fa-copy {
+    margin-left: 10px;
+}
+.wallet .wallet-footer .fa-eye-slash {
+    margin-left: 10px;
+}
+.wallet-btn {
+    background-color: #004442;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.slide-btn.left {
+    left: 10px;
+}
+.slide-btn.right {
+    right: 10px;
+}
+
+/* details */
+
+.wallet-details, .latest-transaction {
+    margin-bottom: 20px;
+}
+.wallet-details div, .latest-transaction div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.wallet-details div span{
+    font-size: 16px;
+}
+.wallet-details div span[data-value="positive"],
+.latest-transaction div span[data-value="positive"] {
+    color: #798645; /* Warna hijau untuk nilai positif */
+}
+
+.wallet-details div span[data-value="negative"],
+.latest-transaction div span[data-value="negative"] {
+    color: #CB6040; /* Warna merah untuk nilai negatif */
+}
+
+.latest-transaction .row {
+    display: flex;
+    flex-direction: column;  /* Menempatkan row dalam kolom */
+    justify-content: space-between;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+.latest-transaction .col {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1px;
+}
+
+.latest-transaction .col:nth-child(2) {
+    color: rgba(0, 0, 0, 0.5); /* Warna hitam dengan opacity 60% */
+    font-size: 14px;
+}
+
+/* .latest-transaction table tr td[data-value="negative"] {
+    color: #CB6040
+} */
+
+.see-all {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.see-all button {
+    background-color: #ffffff;
+    border: 0.5px solid #004442;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #004442;
+    width: 100px;
+    height: fit-content;
+}
