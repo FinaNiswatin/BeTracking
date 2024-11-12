@@ -78,14 +78,14 @@
             <!-- My Goals -->
             <div class="col-md-4">
                 <div class="custom-shadow goal-card p-4 mb-4 rounded-4">
-                    <div class="row">
+                    <a href="#" class="row text-decoration-none" data-bs-toggle="modal" data-bs-target="#addGoalModal">
                         <div class="col-md-10">
                             <h5 class="text-primary">My Goals</h5>
                         </div>
                         <div class="col-md-2">
                             <img src="{{ asset('images/plus-icon-dashboard.svg') }}" alt="">
                         </div>
-                    </div>
+                    </a>
                     <div class="row">
                         <!-- Laptop Goal -->
                         <div class="col-md-6 my-3">
@@ -174,26 +174,26 @@
                             Grocery at shop</td>
                         <td>Indomaret</td>
                         <td>12 Sept 2024</td>
-                        <td class="text-danger">- Rp600,000</td>
+                        <td class="text-danger">Rp600,000</td>
                     </tr>
                     <tr>
                         <td><img src="{{ asset('images/icon_subs.svg') }}" alt="Subscription Icon" class="me-2" />
                             Netflix Subscription</td>
                         <td>Netflix</td>
                         <td>5 Sept 2024</td>
-                        <td class="text-danger">- Rp186,000</td>
+                        <td class="text-danger">Rp186,000</td>
                     </tr>
                     <tr>
                         <td><img src="{{ asset('images/Icon Lunch1.svg') }}" alt="Subscription Icon" class="me-2" />Lunch</td>
                         <td>Geprek</td>
                         <td>3 Sept 2024</td>
-                        <td class="text-danger">- Rp25,000</td>
+                        <td class="text-danger">Rp25,000</td>
                     </tr>
                     <tr>
                         <td><img src="{{ asset('images/Icon coffe1.svg') }}" alt="Subscription Icon" class="me-2" />Coffee</td>
                         <td>Kopken</td>
                         <td>1 Sept 2024</td>
-                        <td class="text-danger">- Rp20,000</td>
+                        <td class="text-danger">Rp20,000</td>
                     </tr>
                 
                 </tbody>
@@ -209,10 +209,8 @@
                     </li>
                     <li class="page-item active"><a class="page-link text-dark" href="#">1</a></li>
                     <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
                     <li class="page-item"><a class="page-link text-dark" href="#">...</a></li>
-                    <li class="page-item"><a class="page-link text-dark" href="#">6</a></li>
-                    <li class="page-item"><a class="page-link text-dark" href="#">7</a></li>
+                    <li class="page-item"><a class="page-link text-dark" href="#">5</a></li>
                     <li class="page-item">
                         <a class="page-link text-dark" href="#" aria-label="Next">
                             <span aria-hidden="true">Next &raquo;</span>
@@ -224,6 +222,53 @@
         </div>
     </div>
 
+
+    <!-- Modal Tambah Goal -->
+    <div class="modal fade" id="addGoalModal" tabindex="-1" aria-labelledby="addGoalModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addGoalModalLabel">Make a New Goal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="goalForm">
+                        <div class="mb-3">
+                            <label for="goalName" class="form-label">Goal</label>
+                            <input type="text" class="form-control" id="goalName" placeholder="e.g. Laptop, PS 5">
+                        </div>
+                        <div class="mb-3">
+                            <label for="goalAmount" class="form-label">Amount</label>
+                            <input type="text" class="form-control" id="goalAmount" placeholder="e.g. Rp4,000,000">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn custom-btn" id="saveGoal">Add</button>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!--  dashboard.js -->
     <script src="{{ asset('js/dashboard.js') }}"></script>
+
+    <script>
+
+        document.getElementById('addGoalModal').addEventListener('show.bs.modal', function () {
+                document.getElementById('goalName').value = '';
+                document.getElementById('goalAmount').value = '';
+            });
+
+        document.getElementById('saveGoal').addEventListener('click', function () {
+            const goalName = document.getElementById('goalName').value;
+            const goalAmount = document.getElementById('goalAmount').value;
+    
+            const modal = bootstrap.Modal.getInstance(document.getElementById('addGoalModal'));
+            modal.hide();
+        });
+    </script>
+    
 @endsection

@@ -157,9 +157,9 @@
                     </div>
 
                     <div class="d-flex justify-content-center">
-                        <div class="see-all">
-                            <button>See All</button>
-                        </div>
+                        <a href="{{ route('reports') }}" class="see-all text-decoration-none">
+                            <button >See All</button>
+                        </a>
                     </div>
                 </div>
             </div>
