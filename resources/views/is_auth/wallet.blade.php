@@ -23,6 +23,7 @@
                 </button>
                 <div class="col">
                     <div class="wallets-container">
+
                         <div class="wallets" id="wallets">
                             <!-- wallet 1 -->
                             <div class="wallet" style="background: linear-gradient(180deg, #005E6A 0%, #002E34 100%);">
@@ -75,6 +76,7 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>

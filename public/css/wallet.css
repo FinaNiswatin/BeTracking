@@ -1,31 +1,56 @@
+/* CSS */
 .wallets-container {
     position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .wallets {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    overflow: hidden;
-    width: 100%;
-}
-.wallets {
-    display: flex;
+    min-height: 300px;
     gap: 20px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding: 20px 0;
-}
-.wallet {
-    background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 25px;
+  }
+  
+  .wallet {
+    position: absolute;
     width: 350px;
     height: 200px;
-    text-align: left;
-    position: relative;
+    border-radius: 20px;
+    padding: 25px;
+    background-color: #ffffff;
     color: #ffffff;
-}
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .wallet.active {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 2;
+    pointer-events: auto;
+  }
+  
+  .wallet.prev {
+    transform: translateX(-100%) scale(0.8);
+    opacity: 1;
+    z-index: 1;
+    pointer-events: auto;
+  }
+  
+  .wallet.next {
+    transform: translateX(100%) scale(0.8);
+    opacity: 1;
+    z-index: 1;
+    pointer-events: auto;
+  }
+
+  /* ================================================= */
+
 .wallet .wallet-header {
     display: flex;
     justify-content: space-between;
