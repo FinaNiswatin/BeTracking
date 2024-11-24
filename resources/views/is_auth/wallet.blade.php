@@ -84,7 +84,7 @@
             <!-- add wallet button -->
             <div class="d-flex justify-content-center mb-3">
                 <button class="wallet-btn" onclick="">
-                    Insert New Wallet
+                    Insert New Card
                 </button>
             </div>
 
@@ -92,7 +92,7 @@
                 <div class="custom-shadow mt-4 p-4 rounded-4" style="width: 65%">
                     <div class="row align-items-start">
                         <div class="row mx-2">
-                            <h5 class="text-primary font-weight-bold pb-1">Wallet Details</h5>
+                            <h5 class="text-primary font-weight-bold pb-1">Card Details</h5>
                             <div class="wallet-details">
                                 <div>
                                     <span>Total income this month</span>
